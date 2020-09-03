@@ -1,0 +1,12 @@
+<launch>
+  <!-- Run a passthrough filter to clean NaNs -->
+  <node pkg="pcl_ros" type="passthrough" name="passthrough_x" output="screen">
+    <remap from="input" to="/rtabmap/cloud_obstacles" />
+    <rosparam>
+      filter_field_name: x
+      filter_limit_min: 0.02
+      filter_limit_max: 1.5
+      filter_limit_negative: False
+    </rosparam>
+  </node>
+</launch>

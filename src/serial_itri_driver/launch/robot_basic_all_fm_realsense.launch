@@ -1,0 +1,89 @@
+<!--html-->
+
+<launch>
+
+  <arg name="use_rviz" default="false" />
+
+
+  <node name="itri_encoder_node" pkg="serial_itri_driver"  type="serial_driver_node">
+    <param name="Lport" type="string" value="/dev/ttyS1" />
+    <param name="Rport" type="string" value="/dev/ttyS0" />
+    <param name="baudrate" type="int" value="57600" />
+  </node>
+
+  <!--node name="keyboard_cmd_node" pkg="serial_itri_driver" type="serial_driver_keyboard" output="screen"/-->
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+  <include file="$(find my_robot_localization)/launch/ekf_template.launch" />
+  <node name="Battery_Status" pkg="voltage-measure"  type="Battery_Status" />
+  <!--node pkg="switch_cmd_vel" type="Switch_cmd_vel" name="Switch_cmd_vel" /-->
+   
+  <node pkg="map_server" type="map_server" name="map_server" args="$(find serial_itri_driver)/map/map20190815.yaml"/>
+
+  <node pkg="ble_imu" type="BLE_IMU" name="BLE_IMU" />
+
+  <param name="robot_description"
+    textfile="$(find serial_itri_driver)/urdf/cowalk.urdf" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher"  type="robot_state_publisher"/>
+  
+  <!-- amcl node -->
+  <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <remap from="scan" to="scan_filtered"/>
+    <!--remap from="scan" to="base_scan"/-->
+    <!-- Publish scans from best pose at a max of 10 Hz -->
+    <param name="use_map_topic" value="true"/>
+    <param name="odom_model_type" value="diff"/>
+    <param name="transform_tolerance" value="0.5" />
+    <param name="gui_publish_rate" value="8.0"/>
+    <param name="laser_max_beams" value="200"/>
+    <param name="min_particles" value="500"/>
+    <param name="max_particles" value="5000"/>
+    <param name="kld_err" value="0.1"/>
+    <param name="kld_z" value="0.99"/>
+    <param name="odom_alpha1" value="0.05"/>
+    <param name="odom_alpha2" value="0.05"/>
+    <!-- translation std dev, m -->
+    <param name="odom_alpha3" value="0.05"/>
+    <param name="odom_alpha4" value="0.05"/>
+    <param name="laser_z_hit" value="0.9"/>
+    <param name="laser_z_short" value="0.05"/>
+    <param name="laser_z_max" value="0.05"/>
+    <param name="laser_z_rand" value="0.5"/>
+    <param name="laser_sigma_hit" value="0.2"/>
+    <param name="laser_lambda_short" value="0.1"/>
+    <param name="laser_lambda_short" value="0.1"/>
+    <param name="laser_model_type" value="likelihood_field"/>
+    <!-- <param name="laser_model_type" value="beam"/> -->
+    <param name="laser_min_range" value="1"/>
+    <param name="laser_max_range" value="12"/>
+    <param name="laser_likelihood_max_dist" value="2.0"/>
+    <param name="update_min_d" value="0.2"/>
+    <param name="update_min_a" value="0.5"/>
+    <param name="resample_interval" value="1"/>
+    <param name="transform_tolerance" value="0.1"/>
+    <param name="recovery_alpha_slow" value="0.0"/>
+    <param name="recovery_alpha_fast" value="0.1"/>
+
+    <param name="odom_frame_id" value="odom"/>
+    <param name="base_frame_id" value="base_link"/>
+    <param name="global_frame_id" value="map"/> 
+    <param name="tf_broadcast" value="true"/>
+    <param name="use_map_topic" value="true"/>   
+
+    <param name="initial_pose_x" value="0.0"/> 
+    <param name="initial_pose_y" value="0.0"/>
+    <param name="initial_pose_a" value="3.14"/>     
+
+  </node>
+  
+  <node name="tf_world_to_map" pkg="tf" type="static_transform_publisher"
+      args="0 0 0 0 0 0 world map 10" />
+  <node name="jpeg_streamer" pkg="jpeg_streamer" type="jpeg_streamer">
+    <remap from="/image" to="/camera/color/image_raw/compressed" />
+  </node>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+     <arg name="port" value="9090"/>
+  </include>
+  <node name="rviz" pkg="rviz" type="rviz" if="$(arg use_rviz)" required="$(arg use_rviz)" 
+	args="-d $(find serial_itri_driver)/configuration_files/robot_basic.rviz" />
+</launch>

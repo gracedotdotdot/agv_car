@@ -1,0 +1,8 @@
+<!--html-->
+
+<launch>
+  <node pkg="map_server" type="map_server" name="map_server" args="$(find serial_itri_driver)/map/map.yaml"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+     <arg name="port" value="9090"/>
+  </include>
+</launch>

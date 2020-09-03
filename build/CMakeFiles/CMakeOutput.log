@@ -733,3 +733,47 @@ make[2]: Leaving directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp
 make[1]: Leaving directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
+Determining if the Q_WS_X11 exist passed with the following output:
+Change Dir: /home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0ca0d/fast"
+make[1]: Entering directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0ca0d.dir/build.make CMakeFiles/cmTC_0ca0d.dir/build
+make[2]: Entering directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0ca0d.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_0ca0d.dir/CheckSymbolExists.cxx.o -c /home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_0ca0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ca0d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0ca0d.dir/CheckSymbolExists.cxx.o  -o cmTC_0ca0d 
+make[2]: Leaving directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+File /home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CXX compiler accepts the flag -Wl,--version-script,"/home/an/Desktop/catkin_ws/build/perception_pcl/pcl_ros/class_loader_hide_library_symbols__pcl_ros_io.script" passed with the following output:
+Change Dir: /home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c5499/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c5499.dir/build.make CMakeFiles/cmTC_c5499.dir/build
+make[1]: Entering directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c5499.dir/DummyCXXFile.cxx.o
+/usr/bin/c++    -Wl,--version-script,"/home/an/Desktop/catkin_ws/build/perception_pcl/pcl_ros/class_loader_hide_library_symbols__pcl_ros_io.script"   -o CMakeFiles/cmTC_c5499.dir/DummyCXXFile.cxx.o -c /usr/share/cmake-3.10/Modules/DummyCXXFile.cxx
+Linking CXX executable cmTC_c5499
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5499.dir/link.txt --verbose=1
+/usr/bin/c++    -Wl,--version-script,"/home/an/Desktop/catkin_ws/build/perception_pcl/pcl_ros/class_loader_hide_library_symbols__pcl_ros_io.script"    -rdynamic CMakeFiles/cmTC_c5499.dir/DummyCXXFile.cxx.o  -o cmTC_c5499 
+make[1]: Leaving directory '/home/an/Desktop/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+

@@ -1,0 +1,10 @@
+<launch>
+  <node name="itri_encoder_node" pkg="serial_itri_driver"  type="serial_driver_node" output="screen">
+    <param name="Lport" type="string" value="/dev/ttyS0" />
+    <param name="Rport" type="string" value="/dev/ttyS1" />
+    <param name="baudrate" type="int" value="57600" />
+  </node>
+  <node name="keyboard_cmd_node" pkg="serial_itri_driver" type="serial_driver_keyboard_free" output="screen">
+  </node>
+
+</launch>

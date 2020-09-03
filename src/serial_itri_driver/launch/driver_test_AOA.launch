@@ -1,0 +1,7 @@
+<launch>
+
+  <node name="Serial_AOA_node" pkg="serial_itri_driver"  type="Serial_AOA_node" output="screen"/>
+  <!--<node name="Serial_UWB_sub" pkg="serial_itri_driver"  type="Serial_UWB_sub" output="screen"/>-->
+  <!--<node name="pub_cmd_node" pkg="serial_itri_driver" type="serial_driver_test_pub" output="screen"/>-->
+
+</launch>

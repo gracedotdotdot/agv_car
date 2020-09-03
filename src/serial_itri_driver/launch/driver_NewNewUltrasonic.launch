@@ -1,0 +1,3 @@
+<launch>
+  <node name="Serial_NewNewUltrasonic_node" pkg="serial_itri_driver" type="Serial_NewNewUltrasonic_node" output="screen"/>
+</launch>

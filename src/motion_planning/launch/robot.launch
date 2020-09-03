@@ -1,48 +1,71 @@
 <launch>
 
-  <param name="Odom/ResetCountdown"              value="5" />
+  <!--param name="Odom/ResetCountdown"              value="5" /-->
   <!-- Sensor -->
-  <!--include file="$(find motion_planning)/launch/sensor.launch" /-->
+  <!--include file="$(find motion_planning)/launch/sensor.launch"/ -->
+
   <!-- Start the Motors -->
-  <include file="$(find kubot_bringup)/launch/robot.launch" />
+  <!-- For robot configuration -->
+    <include file="$(find kubot_bringup)/launch/model.launch"/>
+  <!-- For Kubot -->
+    <!--include file="$(find kubot_bringup)/launch/robot.launch"/-->
+  <!-- For Tifu kun -->
+    <include file="$(find serial_itri_driver)/launch/robot_basic_all_hokuyo.launch"/>
+
 
   <!-- Rtabmap -->
 
   <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
-    <arg name="rtabmap_args" value="--Optimizer/GravitySigma 0.3" />
+    <arg name="rtabmap_args" value=" --Optimizer/GravitySigma 0.3 --delete_db_on_start" />
     <arg name="depth_topic" value="/camera/aligned_depth_to_color/image_raw" />
     <arg name="rgb_topic" value="/camera/color/image_raw" />
     <arg name="camera_info_topic" value="/camera/color/camera_info" />
-    <arg name="approx_sync" value="false" />
-    <arg name="wait_imu_to_init" value="false" />
-	<!-- yi hisin change imu to false-->
+    <arg name="approx_sync" value="true" />
+    <arg name="wait_imu_to_init" value="true"/>
     <arg name="imu_topic" value="/rtabmap/imu" />
-    <arg name="localization" value="true" />
+    <arg name="localization" value="false"/>
+    <param name="RGBD/OptimizeFromGraphEnd" type="string" value="false"/>
 
     <param name="wait_for_transform_duration" type="double" value="0.2" />
-    <param name="Rtabmap/StartNewMapOnLoopClosure" value="true"/>
+    <!--param name="Rtabmap/StartNewMapOnLoopClosure" value="true"/-->
 
     <param name="Optimizer/Slam2D" value="true" />
 
     <param name="cloud_noise_filtering_radius" value="0.075"/>
     <param name="cloud_noise_filtering_min_neighbors" value="4"/>
-    <!-- ICP related parameters 
-          <param name="RGBD/NeighborLinkRefining" type="string" value="true"/>
-          <param name="RGBD/ProximityBySpace"     type="string" value="true"/>
-          <param name="RGBD/AngularUpdate"        type="string" value="0.01"/>
-          <param name="RGBD/LinearUpdate"         type="string" value="0.01"/>
-          <param name="RGBD/OptimizeFromGraphEnd" type="string" value="false"/>
-          <param name="Grid/FromDepth"            type="string" value="false"/> 
 
-          <param name="Reg/Force3DoF"             type="string" value="true"/>
-          <param name="Reg/Strategy"              type="string" value="1"/> 
-	  <param name="Icp/VoxelSize"                 type="string" value="0.05"/>
-	  <param name="Icp/MaxCorrespondenceDistance" type="string" value="0.1"/>
-	-->
+    <!--Use Laser for mapping-->
+    <arg name="visual_odometry"          value="false"/>
+    <arg name="icp_odometry"             value="true"/>
+    <param name="subscribe_rgb" type="bool" value="true"/>
+    <param name="subscribe_depth" type="bool" value="true"/>
+    <param name="subscribe_rgbd" type="bool" value="false"/>
+    <arg name="subscribe_scan"  value="true"/>
+    <arg name="scan_topic"              default="/base_scan"/>
+    <arg name="subscribe_scan_cloud"    default="false"/>
+    <!--arg name="scan_cloud_topic"        value="/camera/depth/color/points"/-->
+
+    <!-- RTAB-Map's parameters -->
+    <param name="RGBD/NeighborLinkRefining" type="string" value="true"/>
+    <param name="RGBD/ProximityBySpace"     type="string" value="true"/>
+    <param name="RGBD/AngularUpdate"        type="string" value="0.01"/>
+    <param name="RGBD/LinearUpdate"         type="string" value="0.01"/>
+    <param name="RGBD/OptimizeFromGraphEnd" type="string" value="false"/>
+    <param name="Grid/FromDepth"            type="string" value="true"/> <!-- occupancy grid from rgbd -->
+    <param name= "RGBD/ProximityPathMaxNeighbors" type="string" value="5"/>
+    <param name="Reg/Force3DoF"             type="string" value="true"/>
+    <param name="Reg/Strategy"              type="string" value="1"/> <!-- 1=ICP -->
+          
+    <!-- ICP parameters -->
+    <param name="Icp/VoxelSize"                 type="string" value="0.05"/>
+    <param name="Icp/MaxCorrespondenceDistance" type="string" value="0.1"/>
+
   </include> 
 
-  <!-- TF from laser to base_link -->
+  <!-- TF from laser to base_link--> 
   <node pkg="tf" type="static_transform_publisher" name="laser_base_link" args="0 0 0 0 0 0 1 base_link laser 10" />
+  <node pkg="tf" type="static_transform_publisher" name="laser_link" args="0 0 0 0 0 0 1 laser laser_link 10" />
+  <!--node pkg="tf" type="static_transform_publisher" name="map_odom_link" args="0 0 0 0 0 0 1 map odom 10" /-->
 
-  <node pkg="tf" type="static_transform_publisher" name="map_odom_link" args="0 0 0 0 0 0 1 map odom 10" />
+  <!--node pkg="tf" type="static_transform_publisher" name="odom_base_link" args="0 0 0 0 0 0 1 odom base_link 10" /-->
 </launch>

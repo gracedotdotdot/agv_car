@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="itri_driver_node" pkg="serial_itri_driver"  type="serial_driver_node" output="screen"/>
+  <node name="pub_cmd_node" pkg="serial_itri_driver" type="serial_driver_test_pub" output="screen"/>
+
+</launch>

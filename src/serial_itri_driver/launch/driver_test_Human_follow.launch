@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find serial_itri_driver)/launch/robot_basic_all_fm.launch" />
+  <node name="Human_follow1" pkg="serial_itri_driver"  type="Human_follow1" output="screen" />
+  <node name="AOA_Signal_Switch" pkg="serial_itri_driver"  type="AOA_Signal_Switch" />
+  <node name="laser_obs" type="laser_obs" pkg="laser_obs" />
+  <node name="stop_mode" pkg="serial_itri_driver"  type="stop_mode" />
+  <node name="Serial_AOA_node" pkg="serial_itri_driver" type="Serial_AOA_node" />
+</launch>

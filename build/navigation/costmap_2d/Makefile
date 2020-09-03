@@ -288,109 +288,64 @@ run_tests_costmap_2d_rostest_test_inflation_tests.launch/fast:
 .PHONY : run_tests_costmap_2d_rostest_test_inflation_tests.launch/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule
+navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule
 
 # Convenience name for target.
-costmap_2d_gennodejs: navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule
+run_tests_costmap_2d_rostest_test_footprint_tests.launch: navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule
 
-.PHONY : costmap_2d_gennodejs
+.PHONY : run_tests_costmap_2d_rostest_test_footprint_tests.launch
 
 # fast build rule for target.
-costmap_2d_gennodejs/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/build
-.PHONY : costmap_2d_gennodejs/fast
+run_tests_costmap_2d_rostest_test_footprint_tests.launch/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/build.make navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/build
+.PHONY : run_tests_costmap_2d_rostest_test_footprint_tests.launch/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule
+navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule
 
 # Convenience name for target.
-clean_test_results_costmap_2d: navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule
+_run_tests_costmap_2d_gtest_coordinates_test: navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule
 
-.PHONY : clean_test_results_costmap_2d
+.PHONY : _run_tests_costmap_2d_gtest_coordinates_test
 
 # fast build rule for target.
-clean_test_results_costmap_2d/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/build
-.PHONY : clean_test_results_costmap_2d/fast
+_run_tests_costmap_2d_gtest_coordinates_test/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/build.make navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/build
+.PHONY : _run_tests_costmap_2d_gtest_coordinates_test/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
+navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule
 
 # Convenience name for target.
-costmap_2d_gencfg: navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
+_run_tests_costmap_2d_rostest: navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule
 
-.PHONY : costmap_2d_gencfg
+.PHONY : _run_tests_costmap_2d_rostest
 
 # fast build rule for target.
-costmap_2d_gencfg/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build
-.PHONY : costmap_2d_gencfg/fast
+_run_tests_costmap_2d_rostest/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/build.make navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/build
+.PHONY : _run_tests_costmap_2d_rostest/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule
+navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule
 
 # Convenience name for target.
-costmap_tester: navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule
+_run_tests_costmap_2d: navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule
 
-.PHONY : costmap_tester
+.PHONY : _run_tests_costmap_2d
 
 # fast build rule for target.
-costmap_tester/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build
-.PHONY : costmap_tester/fast
-
-# Convenience name for target.
-navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule
-
-# Convenience name for target.
-run_tests_costmap_2d_rostest: navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule
-
-.PHONY : run_tests_costmap_2d_rostest
-
-# fast build rule for target.
-run_tests_costmap_2d_rostest/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/build.make navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/build
-.PHONY : run_tests_costmap_2d_rostest/fast
-
-# Convenience name for target.
-navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
-
-# Convenience name for target.
-run_tests_costmap_2d_rostest_test_simple_driving_test.xml: navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
-
-.PHONY : run_tests_costmap_2d_rostest_test_simple_driving_test.xml
-
-# fast build rule for target.
-run_tests_costmap_2d_rostest_test_simple_driving_test.xml/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/build.make navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/build
-.PHONY : run_tests_costmap_2d_rostest_test_simple_driving_test.xml/fast
-
-# Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-costmap_2d_generate_messages_lisp: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
-
-.PHONY : costmap_2d_generate_messages_lisp
-
-# fast build rule for target.
-costmap_2d_generate_messages_lisp/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
-.PHONY : costmap_2d_generate_messages_lisp/fast
+_run_tests_costmap_2d/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/build
+.PHONY : _run_tests_costmap_2d/fast
 
 # Convenience name for target.
 navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
@@ -406,6 +361,36 @@ map_msgs_generate_messages_eus: navigation/costmap_2d/CMakeFiles/map_msgs_genera
 map_msgs_generate_messages_eus/fast:
 	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_eus.dir/build
 .PHONY : map_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule
+
+# Convenience name for target.
+_costmap_2d_generate_messages_check_deps_VoxelGrid: navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule
+
+.PHONY : _costmap_2d_generate_messages_check_deps_VoxelGrid
+
+# fast build rule for target.
+_costmap_2d_generate_messages_check_deps_VoxelGrid/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/build.make navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/build
+.PHONY : _costmap_2d_generate_messages_check_deps_VoxelGrid/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule
+
+.PHONY : costmap_2d_generate_messages
+
+# fast build rule for target.
+costmap_2d_generate_messages/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/build
+.PHONY : costmap_2d_generate_messages/fast
 
 # Convenience name for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule:
@@ -438,34 +423,34 @@ costmap_2d_gencpp/fast:
 .PHONY : costmap_2d_gencpp/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule
+navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-costmap_2d: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule
+visualization_msgs_generate_messages_eus: navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
-.PHONY : costmap_2d
+.PHONY : visualization_msgs_generate_messages_eus
 
 # fast build rule for target.
-costmap_2d/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d.dir/build
-.PHONY : costmap_2d/fast
+visualization_msgs_generate_messages_eus/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule
+navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-_costmap_2d_generate_messages_check_deps_VoxelGrid: navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/rule
+map_msgs_generate_messages_py: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule
 
-.PHONY : _costmap_2d_generate_messages_check_deps_VoxelGrid
+.PHONY : map_msgs_generate_messages_py
 
 # fast build rule for target.
-_costmap_2d_generate_messages_check_deps_VoxelGrid/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/build.make navigation/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/build
-.PHONY : _costmap_2d_generate_messages_check_deps_VoxelGrid/fast
+map_msgs_generate_messages_py/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/build.make navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
@@ -481,36 +466,6 @@ map_msgs_generate_messages_cpp: navigation/costmap_2d/CMakeFiles/map_msgs_genera
 map_msgs_generate_messages_cpp/fast:
 	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
 .PHONY : map_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
-
-# Convenience name for target.
-costmap_2d_generate_messages_py: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
-
-.PHONY : costmap_2d_generate_messages_py
-
-# fast build rule for target.
-costmap_2d_generate_messages_py/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/build
-.PHONY : costmap_2d_generate_messages_py/fast
-
-# Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule
-
-# Convenience name for target.
-costmap_2d_simple_driving_test_indexed.bag: navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule
-
-.PHONY : costmap_2d_simple_driving_test_indexed.bag
-
-# fast build rule for target.
-costmap_2d_simple_driving_test_indexed.bag/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/build
-.PHONY : costmap_2d_simple_driving_test_indexed.bag/fast
 
 # Convenience name for target.
 navigation/costmap_2d/CMakeFiles/array_parser_test.dir/rule:
@@ -618,6 +573,36 @@ costmap_2d_generate_messages_eus/fast:
 .PHONY : costmap_2d_generate_messages_eus/fast
 
 # Convenience name for target.
+navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_nodejs: navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_lisp: navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
 	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
 .PHONY : navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
@@ -678,49 +663,169 @@ obstacle_tests/fast:
 .PHONY : obstacle_tests/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-map_msgs_generate_messages_py: navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+visualization_msgs_generate_messages_cpp: navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : map_msgs_generate_messages_py
+.PHONY : visualization_msgs_generate_messages_cpp
 
 # fast build rule for target.
-map_msgs_generate_messages_py/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/build.make navigation/costmap_2d/CMakeFiles/map_msgs_generate_messages_py.dir/build
-.PHONY : map_msgs_generate_messages_py/fast
+visualization_msgs_generate_messages_cpp/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule
+navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 
 # Convenience name for target.
-costmap_2d_generate_messages: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/rule
+costmap_2d_generate_messages_py: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 
-.PHONY : costmap_2d_generate_messages
+.PHONY : costmap_2d_generate_messages_py
 
 # fast build rule for target.
-costmap_2d_generate_messages/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages.dir/build
-.PHONY : costmap_2d_generate_messages/fast
+costmap_2d_generate_messages_py/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+.PHONY : costmap_2d_generate_messages_py/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule
+navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule
 
 # Convenience name for target.
-run_tests_costmap_2d_rostest_test_footprint_tests.launch: navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/rule
+costmap_2d_simple_driving_test_indexed.bag: navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/rule
 
-.PHONY : run_tests_costmap_2d_rostest_test_footprint_tests.launch
+.PHONY : costmap_2d_simple_driving_test_indexed.bag
 
 # fast build rule for target.
-run_tests_costmap_2d_rostest_test_footprint_tests.launch/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/build.make navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_footprint_tests.launch.dir/build
-.PHONY : run_tests_costmap_2d_rostest_test_footprint_tests.launch/fast
+costmap_2d_simple_driving_test_indexed.bag/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_simple_driving_test_indexed.bag.dir/build
+.PHONY : costmap_2d_simple_driving_test_indexed.bag/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
+
+# Convenience name for target.
+run_tests_costmap_2d_rostest_test_simple_driving_test.xml: navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
+
+.PHONY : run_tests_costmap_2d_rostest_test_simple_driving_test.xml
+
+# fast build rule for target.
+run_tests_costmap_2d_rostest_test_simple_driving_test.xml/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/build.make navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/build
+.PHONY : run_tests_costmap_2d_rostest_test_simple_driving_test.xml/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_lisp: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+
+.PHONY : costmap_2d_generate_messages_lisp
+
+# fast build rule for target.
+costmap_2d_generate_messages_lisp/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+.PHONY : costmap_2d_generate_messages_lisp/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule
+
+# Convenience name for target.
+costmap_2d: navigation/costmap_2d/CMakeFiles/costmap_2d.dir/rule
+
+.PHONY : costmap_2d
+
+# fast build rule for target.
+costmap_2d/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d.dir/build
+.PHONY : costmap_2d/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule
+
+# Convenience name for target.
+costmap_2d_gennodejs: navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/rule
+
+.PHONY : costmap_2d_gennodejs
+
+# fast build rule for target.
+costmap_2d_gennodejs/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_gennodejs.dir/build
+.PHONY : costmap_2d_gennodejs/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule
+
+# Convenience name for target.
+clean_test_results_costmap_2d: navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/rule
+
+.PHONY : clean_test_results_costmap_2d
+
+# fast build rule for target.
+clean_test_results_costmap_2d/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/clean_test_results_costmap_2d.dir/build
+.PHONY : clean_test_results_costmap_2d/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
+
+# Convenience name for target.
+costmap_2d_gencfg: navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
+
+.PHONY : costmap_2d_gencfg
+
+# fast build rule for target.
+costmap_2d_gencfg/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build
+.PHONY : costmap_2d_gencfg/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule
+
+# Convenience name for target.
+run_tests_costmap_2d_rostest: navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/rule
+
+.PHONY : run_tests_costmap_2d_rostest
+
+# fast build rule for target.
+run_tests_costmap_2d_rostest/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/build.make navigation/costmap_2d/CMakeFiles/run_tests_costmap_2d_rostest.dir/build
+.PHONY : run_tests_costmap_2d_rostest/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule
+
+# Convenience name for target.
+costmap_tester: navigation/costmap_2d/CMakeFiles/costmap_tester.dir/rule
+
+.PHONY : costmap_tester
+
+# fast build rule for target.
+costmap_tester/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build.make navigation/costmap_2d/CMakeFiles/costmap_tester.dir/build
+.PHONY : costmap_tester/fast
 
 # Convenience name for target.
 navigation/costmap_2d/CMakeFiles/coordinates_test.dir/rule:
@@ -736,6 +841,21 @@ coordinates_test: navigation/costmap_2d/CMakeFiles/coordinates_test.dir/rule
 coordinates_test/fast:
 	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/coordinates_test.dir/build.make navigation/costmap_2d/CMakeFiles/coordinates_test.dir/build
 .PHONY : coordinates_test/fast
+
+# Convenience name for target.
+navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_py: navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make navigation/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 navigation/costmap_2d/CMakeFiles/costmap_2d_genpy.dir/rule:
@@ -888,36 +1008,6 @@ costmap_2d_markers/fast:
 .PHONY : costmap_2d_markers/fast
 
 # Convenience name for target.
-navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule
-
-# Convenience name for target.
-_run_tests_costmap_2d_gtest_coordinates_test: navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/rule
-
-.PHONY : _run_tests_costmap_2d_gtest_coordinates_test
-
-# fast build rule for target.
-_run_tests_costmap_2d_gtest_coordinates_test/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/build.make navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_gtest_coordinates_test.dir/build
-.PHONY : _run_tests_costmap_2d_gtest_coordinates_test/fast
-
-# Convenience name for target.
-navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule
-
-# Convenience name for target.
-_run_tests_costmap_2d_rostest: navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/rule
-
-.PHONY : _run_tests_costmap_2d_rostest
-
-# fast build rule for target.
-_run_tests_costmap_2d_rostest/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/build.make navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest.dir/build
-.PHONY : _run_tests_costmap_2d_rostest/fast
-
-# Convenience name for target.
 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule:
 	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
 .PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d_rostest_test_simple_driving_test.xml.dir/rule
@@ -946,21 +1036,6 @@ footprint_tests: navigation/costmap_2d/CMakeFiles/footprint_tests.dir/rule
 footprint_tests/fast:
 	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/footprint_tests.dir/build.make navigation/costmap_2d/CMakeFiles/footprint_tests.dir/build
 .PHONY : footprint_tests/fast
-
-# Convenience name for target.
-navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule
-.PHONY : navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule
-
-# Convenience name for target.
-_run_tests_costmap_2d: navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/rule
-
-.PHONY : _run_tests_costmap_2d
-
-# fast build rule for target.
-_run_tests_costmap_2d/fast:
-	cd /home/an/Desktop/catkin_ws/build && $(MAKE) -f navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/build.make navigation/costmap_2d/CMakeFiles/_run_tests_costmap_2d.dir/build
-.PHONY : _run_tests_costmap_2d/fast
 
 plugins/inflation_layer.o: plugins/inflation_layer.cpp.o
 
@@ -1632,22 +1707,20 @@ help:
 	@echo "... edit_cache"
 	@echo "... _run_tests_costmap_2d_rostest_test_inflation_tests.launch"
 	@echo "... run_tests_costmap_2d_rostest_test_inflation_tests.launch"
-	@echo "... costmap_2d_gennodejs"
-	@echo "... clean_test_results_costmap_2d"
-	@echo "... costmap_2d_gencfg"
-	@echo "... costmap_tester"
-	@echo "... run_tests_costmap_2d_rostest"
-	@echo "... run_tests_costmap_2d_rostest_test_simple_driving_test.xml"
-	@echo "... costmap_2d_generate_messages_lisp"
+	@echo "... run_tests_costmap_2d_rostest_test_footprint_tests.launch"
+	@echo "... _run_tests_costmap_2d_gtest_coordinates_test"
+	@echo "... _run_tests_costmap_2d_rostest"
+	@echo "... _run_tests_costmap_2d"
 	@echo "... map_msgs_generate_messages_eus"
-	@echo "... _run_tests_costmap_2d_rostest_test_footprint_tests.launch"
-	@echo "... costmap_2d_gencpp"
-	@echo "... costmap_2d"
 	@echo "... test"
 	@echo "... _costmap_2d_generate_messages_check_deps_VoxelGrid"
+	@echo "... install/strip"
+	@echo "... costmap_2d_generate_messages"
+	@echo "... _run_tests_costmap_2d_rostest_test_footprint_tests.launch"
+	@echo "... costmap_2d_gencpp"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... map_msgs_generate_messages_py"
 	@echo "... map_msgs_generate_messages_cpp"
-	@echo "... costmap_2d_generate_messages_py"
-	@echo "... costmap_2d_simple_driving_test_indexed.bag"
 	@echo "... array_parser_test"
 	@echo "... costmap_2d_generate_messages_cpp"
 	@echo "... run_tests_costmap_2d_gtest"
@@ -1655,15 +1728,25 @@ help:
 	@echo "... static_tests"
 	@echo "... inflation_tests"
 	@echo "... costmap_2d_generate_messages_eus"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... map_msgs_generate_messages_lisp"
 	@echo "... _run_tests_costmap_2d_gtest"
 	@echo "... map_msgs_generate_messages_nodejs"
 	@echo "... obstacle_tests"
-	@echo "... map_msgs_generate_messages_py"
-	@echo "... install/strip"
-	@echo "... costmap_2d_generate_messages"
-	@echo "... run_tests_costmap_2d_rostest_test_footprint_tests.launch"
+	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... costmap_2d_generate_messages_py"
+	@echo "... costmap_2d_simple_driving_test_indexed.bag"
+	@echo "... run_tests_costmap_2d_rostest_test_simple_driving_test.xml"
+	@echo "... costmap_2d_generate_messages_lisp"
+	@echo "... costmap_2d"
+	@echo "... costmap_2d_gennodejs"
+	@echo "... clean_test_results_costmap_2d"
+	@echo "... costmap_2d_gencfg"
+	@echo "... run_tests_costmap_2d_rostest"
+	@echo "... costmap_tester"
 	@echo "... coordinates_test"
+	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... costmap_2d_genpy"
 	@echo "... _run_tests_costmap_2d_gtest_array_parser_test"
 	@echo "... costmap_2d_genlisp"
@@ -1674,11 +1757,8 @@ help:
 	@echo "... run_tests_costmap_2d"
 	@echo "... costmap_2d_willow-full-0.025.pgm"
 	@echo "... costmap_2d_markers"
-	@echo "... _run_tests_costmap_2d_gtest_coordinates_test"
-	@echo "... _run_tests_costmap_2d_rostest"
 	@echo "... _run_tests_costmap_2d_rostest_test_simple_driving_test.xml"
 	@echo "... footprint_tests"
-	@echo "... _run_tests_costmap_2d"
 	@echo "... plugins/inflation_layer.o"
 	@echo "... plugins/inflation_layer.i"
 	@echo "... plugins/inflation_layer.s"
