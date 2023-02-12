@@ -1,0 +1,4 @@
+bool check_or_not
+---
+bool action_running
+bool action_completed

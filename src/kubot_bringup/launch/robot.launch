@@ -1,0 +1,12 @@
+<launch>
+  <!--param name ="/use_sim_time" value="true"/-->
+
+  <!--arg name="lidar" default="$(env KUBOT_LIDAR)" doc="lidar type [rplidar, eai-x4, eai-g4]"/-->
+  <!--node name="kubot_driver" pkg="kubot_bringup" type="kubot_bringup" /--> 
+  <include file="$(find kubot_bringup)/launch/bringup.launch"/>
+  <include file="$(find kubot_bringup)/launch/model.launch"/>
+
+  <!--include file="$(find kubot_bringup)/launch/$(arg lidar).launch"/-->
+  <include file="$(find kubot_bringup)/launch/box_filter_example.launch"/>
+
+</launch>

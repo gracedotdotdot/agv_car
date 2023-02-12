@@ -1,0 +1,19 @@
+global_costmap:
+   global_frame: map
+   allow_unknown: false
+   robot_base_frame: base_link
+   update_frequency: 1.0 #2
+   publish_frequency: 1.0 #1
+   static_map: true
+   # meter_scoring: true
+   rolling_window: false
+   resolution: 0.05
+   use_dijkstra: false
+   use_quadratic: false
+   use_grid_path: false
+   old_navfn_behavior: false
+   orientation_mode: 1
+   #plugins:
+   #- {name: static_layer, type: "costmap_2d::StaticLayer"}
+   #- {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+transform_tolerance: 1.0

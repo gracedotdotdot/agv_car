@@ -1,0 +1,29 @@
+<launch>
+
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="align_depth" value="true" />
+    <arg name="unite_imu_method" value="linear_interpolation" />
+    <arg name="filters" value="pointcloud"/>
+ </include>
+
+  <node name="imu_filter" pkg="imu_filter_madgwick" type="imu_filter_node" >
+    <param name="use_mag" value="false" />
+    <param name="publish_tf" value="false" />
+    <param name="world_frame" value="enu" />
+    <!--param name="fixed_frame" value="/camera_link" /-->
+
+    <remap from="/imu/data_raw" to="/camera/imu"/>
+    <remap from="/imu/data" to="/rtabmap/imu"/>
+  </node>
+
+  <!-- RPlidar -->
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+  <!-- Laser Filter -->
+  <node pkg="laser_filters" type="scan_to_scan_filter_chain"
+      name="laser_filter_pre">
+    <rosparam command="load" file="$(find motion_planning)/param/laser_config.yaml" />
+    <remap from="scan_filtered" to="base_scan" />
+  </node>
+
+</launch>

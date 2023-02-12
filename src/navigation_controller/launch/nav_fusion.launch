@@ -1,0 +1,11 @@
+<!--html-->
+
+<launch>
+
+	<node name="navigation_controller" pkg="navigation_controller" type="navigation_controller_fusion" output="log">
+		<remap from="cmd_vel" to="raw_cmd_vel"/>
+		<param name="camera_detect_obs_or_not" type="bool" value="true" />
+		<param name="lidar_detect_obs_or_not" type="bool" value="true" />
+ 		<param name="avoid_obs_or_not" type="bool" value="false" />
+	</node>
+</launch>
